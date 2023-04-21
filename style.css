@@ -1,0 +1,262 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg-color: #20330c;
+  --main-text-color: #F9FAF8;
+  --info-text-color: #20330c;
+  --secondary-text-color: #E5E7EB;
+  --btn-bg-color: #42556a;
+  --quote-bg-color: #E5E7EB;
+  --quote-text-color: #20330c;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #FFFFFF;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
+h1, h2, h3, p, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.main-text {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--main-text-color);
+}
+
+.secondary-text {
+  font-size: 18px;
+  color: var(--secondary-text-color);
+  line-height: 25px;
+}
+
+.logo-text {
+  font-size: 24px;
+  color: var(--main-text-color);
+  font-weight: 700;
+}
+
+.info-text {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--info-text-color);
+}
+
+.btn {
+  background-color: var(--btn-bg-color);
+  font-size: 18px;
+  color: var(--secondary-text-color);
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  opacity: .8;
+  transition: opacity .3s ease-in-out;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 45px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.quote {
+  background-color: var(--quote-bg-color);
+}
+
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 300;
+  color: var(--quote-text-color);
+}
+
+/* header */
+
+.header {
+  background-color: var(--main-bg-color);
+  padding: 30px 0;
+}
+
+.header > .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-link {
+  text-decoration: none;
+  display: block;
+  margin-left: 25px;
+  opacity: .5;
+  transition: opacity .3s ease-in-out;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+/* intro */
+
+.intro {
+  background-color: var(--main-bg-color); 
+  box-shadow: 0px 10px 10px -10px #000000;
+  padding: 50px 0 50px 0;
+}
+
+.intro > .container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.intro__main {
+  flex: 7;
+}
+
+.intro__main h1 {
+  max-width: 500px;
+}
+
+.intro__img {
+  flex: 5;
+}
+
+.intro__img img {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  border-radius: 5px;
+}
+
+.intro__desc {
+  padding: 20px 0 30px 0;
+}
+
+/* info */
+
+.info {
+  padding: 50px 0 50px 0;
+}
+
+.info__title {
+  text-align: center;
+  margin: 0 auto 50px;
+}
+
+.info__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.info__item figure {
+  max-width: 250px;
+  text-align: center;
+}
+
+.info__item figcaption {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--info-text-color);
+  margin-top: 12px;
+}
+
+.info__item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+/* quote */
+
+.quote__desc {
+  padding-top: 50px;
+}
+
+.quote__author {
+  padding-bottom: 50px;
+  text-align: right;
+}
+
+.quote__author span {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--info-text-color);
+}
+
+/* action */
+
+.action-wrapper {
+  background-color: var(--main-bg-color);
+  border-radius: 5px;
+  padding: 40px 60px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.action__title {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 24px;
+}
+
+/* footer */
+
+.footer {
+  flex: 0 0 auto;
+  background-color: var(--main-bg-color);
+  text-align: center;
+  padding: 20px 0;
+}
