@@ -19,6 +19,16 @@ html, body {
   background-color: #FFFFFF;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+}
+
 h1, h2, h3, p, blockquote {
   margin: 0;
   padding: 0;
@@ -226,9 +236,6 @@ img {
 }
 
 /* action */
-.action {
-  margin-bottom: 50px
-}
 
 .action-wrapper {
   background-color: var(--main-bg-color);
@@ -243,4 +250,13 @@ img {
   color: var(--secondary-text-color);
   font-weight: 700;
   font-size: 24px;
+}
+
+/* footer */
+
+.footer {
+  flex: 0 0 auto;
+  background-color: var(--main-bg-color);
+  text-align: center;
+  padding: 20px 0;
 }
